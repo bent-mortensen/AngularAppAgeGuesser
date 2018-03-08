@@ -1,0 +1,22 @@
+#picture {
+    width: 250px;
+    height: 250px;
+}
+button {
+    width: 250px;
+    height: 46px;
+    margin-top: 1em;
+    font-family: Roboto-Regular;
+    font-size: 20px;
+    text-align: center;
+    color:      #FFFFFF;
+    background-color:      #08AE9E;
+    border: 0px solid      #08AE9E;
+    border-radius: 6px;
+    box-shadow: 0px 3px 4px 0px      #A0A0A0;
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../../assets/fonts/Roboto-Regular.ttf');
+}

@@ -1,0 +1,36 @@
+p {
+    font-family: Roboto-Bold;
+    font-size: 37px;
+    text-align: center;
+    color:      #000000;
+}
+#ShowAge {
+    width: 74px;
+    height: 84px;
+    font-family: Roboto-Bold;
+    font-size: 64px;
+    text-align: center;
+    color:      #000000;
+}
+button {
+    width: 121px;
+    height: 46px;
+    margin-left: 1em;
+    font-family: Roboto-Regular;
+    font-size: 20px;
+    text-align: center;
+    color:      #FFFFFF;
+    background-color:      #08AE9E;
+    border: 0px solid      #08AE9E;
+    border-radius: 6px;
+    box-shadow: 0px 3px 4px 0px      #A0A0A0;
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../../assets/fonts/Roboto-Bold.ttf');
+}
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../../assets/fonts/Roboto-Regular.ttf');
+}

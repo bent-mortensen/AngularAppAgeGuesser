@@ -1,0 +1,15 @@
+p {
+    width: 230px;
+    height: 49px;
+    font-family: Roboto-Bold;
+    font-size: 37px;
+    color: #000000;
+}
+#picture {
+    width: 250px;
+    height: 200px;
+}
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../../assets/fonts/Roboto-Bold.ttf');
+}
