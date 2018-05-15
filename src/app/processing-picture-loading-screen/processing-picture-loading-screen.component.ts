@@ -44,7 +44,7 @@ export class ProcessingPictureLoadingScreenComponent implements OnInit {
           //console.log("Guessed age: " + value.faces[0].age )
          },
         (error) => { console.log(error) },
-        () => { console.log("Made it this far - try again!") }
+        () => { console.log("Made it this far - try again!") } 
       )
   }
 
@@ -58,10 +58,10 @@ export class ProcessingPictureLoadingScreenComponent implements OnInit {
 
     let httpHeaders = new HttpHeaders()
       .set('Content-Type', 'application/octet-stream')
-      .set('ocp-apim-subscription-key', 'Your Api Key Here');
+      .set('ocp-apim-subscription-key', '982ca14684e142a28699c8dfe5ab6154'); // Your Api Key Here
 
     return this.http.post<any[]>(url, this.blob, {
-      headers: httpHeaders,
+      headers: httpHeaders, 
       responseType: 'json'
     });
   }

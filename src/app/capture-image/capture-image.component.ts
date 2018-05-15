@@ -2,6 +2,7 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { Router } from '@angular/router';
 import { AppRoutingModule } from '../app-routing.module';
 import { DataService } from '../data.service';
+import * as Camera from "nativescript-camera"; //npm install nativescript-camera --save 
 
 @Component({
   selector: 'app-capture-image',
@@ -9,11 +10,13 @@ import { DataService } from '../data.service';
   styleUrls: ['./capture-image.component.css']
 })
 export class CaptureImageComponent implements OnInit {
-  @ViewChild('video') _video: ElementRef;
+  @ViewChild('video') _video: any;
   @ViewChild('canvas') _canvas: ElementRef;
 
   public dataUrl;
   public blob: Blob;
+
+
  
   constructor(
     private router: Router,
@@ -24,6 +27,9 @@ export class CaptureImageComponent implements OnInit {
   }
 
   ngAfterViewInit() {
+   
+
+
     this._video = this._video.nativeElement;
     if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
       navigator.mediaDevices.getUserMedia({ video: true }).then(stream => {
@@ -38,7 +44,11 @@ export class CaptureImageComponent implements OnInit {
     let context = canvas.getContext('2d');
     let image = context.drawImage(this._video, 0, 0, 300, 225);
     let dataUrl = canvas.toDataURL();
-    this.blob = this.Makeblob(dataUrl);
+
+    this.blob = this.Makeblob(Camera.takePicture());
+    
+
+    //this.blob = this.Makeblob(dataUrl);
     this.dataService.SaveBlob(this.blob);
     this.router.navigate(["/load"]);
   }

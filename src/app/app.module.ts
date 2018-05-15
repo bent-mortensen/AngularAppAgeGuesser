@@ -18,7 +18,7 @@ import { DataService } from './data.service';
   declarations: [
     AppComponent,
     AboutComponent,
-    HomeComponent,
+    HomeComponent, 
     CaptureImageComponent,
     ProcessingPictureLoadingScreenComponent,
     ResultScreenComponent,

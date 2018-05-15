@@ -7,6 +7,10 @@ h1 {
     color: #000000;
 }
 
+#grad {
+    background: linear-gradient(red, yellow);
+}
+
 #picture {
     width: 321px;
     height: 305px;
@@ -19,3 +23,14 @@ h1 {
     font-family: 'Roboto-Bold';
     src: url('../../assets/fonts/Roboto-Bold.ttf');
 }
+
+html {
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: linear-gradient(red, yellow);
+}
+

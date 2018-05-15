@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class SplashScreenComponent implements OnInit {
   title = 'Guess My Age';
   constructor() { }
-
-  ngOnInit() {
+ 
+  ngOnInit() { 
   }
 
 }
